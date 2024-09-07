@@ -1,1 +1,19 @@
 /* This stylesheet is meant for custom styles, on top of The Sylk Template */
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.brand-image {
+    width: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+}

@@ -233,6 +233,7 @@
   }
   #main-sidebar .main-nav ul li {
     margin: 25px 0;
+    text-align: center;
   }
   #main-sidebar .main-nav ul li ul.dropdown {
     visibility: hidden;
@@ -689,6 +690,27 @@ body.loaded .img-stack img {
   text-decoration: none;
   position: relative;
   color: #fff;
+}
+
+.img-grid .item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  font-size: 16px; /* Adjust font size as needed */
+  text-align: center; /* Center text */
+}
+
+.img-grid .item:hover .overlay {
+  opacity: 1;
 }
 
 .img-grid .item.effect img {
