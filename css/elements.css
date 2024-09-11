@@ -1121,13 +1121,20 @@ Made by Themanoid
 
 #lightbox .lightbox-inner {
   position: relative;
-  margin: auto;
-  width: auto;
+  margin: 0 0 0 64px;
+  width: 60%;
   height: auto;
   -webkit-transition: all .3s;
   transition: all .3s;
   max-width: 90vw;
   max-height: 90vh;
+}
+
+.lightbox-text {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 20px 64px;
+  width: 40%;
 }
 
 #lightbox img, #lightbox iframe, #lightbox video {
@@ -1199,6 +1206,30 @@ Made by Themanoid
 }
 
 @media screen and (max-width: 992px) {
+
+  #lightbox {
+    flex-direction: column;
+  }
+
+  #lightbox .lightbox-inner {
+  position: relative;
+  margin: 64px 0 0 0;
+  width: auto;
+  height: 60%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.lightbox-text {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 20px 64px;
+  width: auto;
+  height: 40%;
+}
+
   #lightbox .controls {
     position: fixed;
     top: 0;
